@@ -1,15 +1,14 @@
-let pronoun = ['the', 'our'];
-let adj = ['great', 'big'];
-let noun = ['jogger', 'racoon'];
+const pronoun = ['the', 'our'];
+const adj = ['great', 'big'];
+const noun = ['jogger', 'racoon'];
+const extensions = ['.com', '.net', '.io'];
 
-let extensions = ['.com', '.net', '.io'];
-
-for(let a = 0; a < pronoun.length; a++){
-    for(let b = 0; b < adj.length; b++){
-        for(let c = 0; c < noun.length; c++){
-            for(let d = 0; d < extensions.length; d++){
-                console.log(`${pronoun[a]}${adj[b]}${noun[c]}${extensions[d]}`)
-            }
-        }
+for (const p of pronoun) {
+  for (const a of adj) {
+    for (const n of noun) {
+      for (const ext of extensions) {
+        console.log(`${p}${a}${n}${ext}`);
+      }
     }
+  }
 }
